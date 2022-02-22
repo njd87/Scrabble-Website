@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="header">Boggle!</div>
+    <!-- From https://getbootstrap.com/docs/4.0/components/card/-->
+    <div class="row">
+        <!-- <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Practice!</h5>
+              <p class="card-text">No time limit, no worries!</p>
+              <a href="practiceGame.html" class="btn btn-primary">Practice Mode</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Quickplay</h5>
+              <p class="card-text">Quick game of boggle. 2 minutes, score your highest!</p>
+              <form action="/gameTransfer" method="post">
+              <button class="btn btn-primary">Quickplay</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Versus</h5>
+                <p class="card-text">Play against friends!</p>
+                  <form action="/versus" method="get">
+                  <button class="btn btn-primary">Invite</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      <p></p>
+      <div class="center, picCheck">
+        <img src="https://logodix.com/logo/1652026.png" alt="Boggle Logo" style="width: 50%; height: 50%">
+      </div>
+{% endblock %}

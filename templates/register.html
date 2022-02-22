@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <h3 style="color:{{ color }}">{{ message }}</h3>
+    <form action="/register" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" required="required" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="cpassword" name="password" placeholder="Password" required="required" type="password">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="confirmation" name="confirmation" placeholder="Confirm Password" required="required" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+{% endblock %}

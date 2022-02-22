@@ -1,0 +1,12 @@
+---
+:id: 103869628
+:submitters:
+- :name: Nicholas DeSanctis
+  :email: njdesanctis@college.harvard.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2021-12-07 07:29:14.456020000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2021-12-06 23:29:14.456020000 Z
+:status: processed
+:score: 20.0

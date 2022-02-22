@@ -1,0 +1,103 @@
+/* creates a solid-colored header with text */
+.header {
+    background-color: #000080;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 8vw;
+    font-family: "Comic Sans";
+}
+
+/* https://www.w3schools.com/howto/howto_css_image_center.asp */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/* from http://bluegalaxy.info/codewalk/2018/03/01/html-css-create-square-grid-using-css-grid/ */
+
+
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    display: inline-block;
+    border: 5px solid black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    grid-gap: 5px;
+}
+
+.cell {
+     /* center the cell content */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 3rem;
+    font-weight: bold;
+    background: white;
+}
+
+
+/* https://www.w3schools.com/howto/howto_js_collapsible.asp 
+    Content for Collapsibles */
+.content {
+    padding: 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-size: 15px;
+}
+
+/* From https://stackoverflow.com/questions/22433616/how-can-i-align-youtube-embedded-video-in-the-center-in-bootstrap/22433845
+    Centers video on screen */
+.centeredVid {
+    width: 560px; /* you have to have a size or this method doesn't work */
+    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
+}
+
+/* From https://stackoverflow.com/questions/22433616/how-can-i-align-youtube-embedded-video-in-the-center-in-bootstrap/22433845
+    Centers text */
+.centeredText {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* makes pictures adjustible */
+.picCheck {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+    text-align: center;
+}

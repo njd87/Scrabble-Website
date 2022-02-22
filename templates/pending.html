@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Pending Invites
+{% endblock %}
+
+{% block main %}
+<div class="header">Pending Matches</div>
+    <table class ="table tablestriped">
+        <thead>
+            <tr>
+                <th>Challenger</th>
+                <th>Score</th>
+                <th>Date</th>
+                <th>Respond</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for invite in invites %}
+            <tr>
+                <td>{{ invite["player1"] }}</td>
+                <td>{{ invite["score1"] }}</td>
+                <td>{{ invite["date"] }}</td>
+                <td>
+                    <form action="/response" method="POST">
+                        <input type="hidden" name="id" value="{{ invite['id'] }}">
+                        <button class="btn btn-primary" type="submit">Play</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
